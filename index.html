@@ -82,6 +82,10 @@
     .image-block {
       margin: 4em 0;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
     }
 
     .image-block h2 {
@@ -97,10 +101,14 @@
     }
 
     .image-block img {
-      max-width: 100%;
+      max-width: min(100%, 720px);
+      width: 100%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .manifesto {
